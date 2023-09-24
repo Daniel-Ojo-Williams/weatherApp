@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <section class="weather">
+    <div class="container">
+      <div class="search">
+        <i class="fas fa-location-dot"></i>
+        <input type="text" placeholder="Enter location here">
+        <button class="fas fa-search"></button>
+      </div>
+      <div class="weather-box">
+        <h3 class="city"></h3>
+        <img src="" class="weather-icon">
+        <div class="text">
+          <h1 class="temperature"></h1>
+          <p class="weather-condition"></p>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fas fa-water"></i>
+            <div class="w-texts">
+              <span></span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="fas fa-wind"></i>
+            <div class="w-texts">
+              <span></span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="error">
+        <div class="error-img">
+          <img src="images/cloud_images/error.svg" alt="">
+        </div>
+        <div class="error-text">
+          <p>Oops! Invalid Location /:</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
